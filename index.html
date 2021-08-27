@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <form id="survey-form" class="survey-form">
+      <h1 id="title">Shopping Survey</h1>
+      <p id="description">
+        Please take a moment to fill out this brief survey about your shopping
+        experience.
+      </p>
+      <div class="form-elements">
+        <div class="left">
+          <label for="name" id="name-label" class="label" required
+            >Name:
+          </label>
+          <input type="text" id="name" placeholder="Enter your name..." />
+          <label for="email" id="email-label" class="label" required
+            >Email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter a valid email address..."
+          />
+          <label for="number" id="number-label" required
+            >You must be over 18</label
+          >
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="100"
+            placeholder="Enter your age..."
+          />
+        </div>
+        <div class="right">
+          <label for="dropdown">Choose the department:</label>
+
+          <select name="shopping-department" id="dropdown">
+            <option value="produce">Produce</option>
+            <option value="meat">Meat</option>
+            <option value="dairy">Dairy</option>
+            <option value="canned">Canned Foods</option>
+            <option value="dry">Dry Goods</option>
+          </select>
+          <p class="rate">Rate your experience:</p>
+          <input type="radio" id="radio" name="quality" value="excellent" />
+          <label for="excellent">Excellent</label><br />
+
+          <input type="radio" id="radio" name="quality" value="average" />
+          <label for="average">Average</label><br />
+
+          <input type="radio" id="radio" name="quality" value="improvement" />
+          <label for="improvement">Needs improvement</label>
+
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for=""></label>
+        </div>
+
+        <div class="comments">
+          <textarea
+            rows="4"
+            cols="35"
+            class="comments"
+            placeholder="Enter comments here..."
+          >
+          </textarea>
+        </div>
+        <button class="btn" id="submit">Submit Form</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
